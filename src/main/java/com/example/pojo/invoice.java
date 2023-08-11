@@ -24,4 +24,6 @@ public class invoice {
     private String Status;
     private String CheckCode;
     private String Remark;
+
+
 }
