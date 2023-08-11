@@ -72,7 +72,9 @@ public class CreditService {
             System.out.println("res: " + invoice);
             Boolean bool = getcreditMapper.selectId(jsonObject2.get("UserID").toString(),jsonObject2.get("InvoiceCode").toString(),jsonObject2.get("InvoiceNo").toString())!=1;
             if(bool){
+                //修改1
                 getcreditMapper.insert(invoice);
+                getcreditMapper.insert2(invoice);
             }
 //            return "saved";
         }
